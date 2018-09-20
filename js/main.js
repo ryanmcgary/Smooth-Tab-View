@@ -54,4 +54,7 @@ function start() {
     transformScaleTranslate();
 
     contentClass.style.cursor = "default";
+    if (controlsClass.classList.contains("controls-visible")) {
+        controlsClass.classList.remove("controls-visible");
+    }
 }
