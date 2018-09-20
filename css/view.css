@@ -1,0 +1,22 @@
+.animated {
+    transition: all 0.4s ease-in-out;
+}
+
+.color1 {
+    background-color: #00bcd4;
+}
+.color2 {
+    background-color: #009688;
+}
+.color3 {
+    background-color: #ffeb3b;
+}
+.color4 {
+    background-color: #ffffff;
+}
+.color5 {
+    background-color: #111111;
+}
+.light {
+    color: #eeeeee;
+}
