@@ -14,11 +14,31 @@ function mouseDown(e) {
     mousePosition.y = e.clientY;
 }
 
+function keyDownHandler(e) {
+	if(e.keyCode == 39) {
+		moveRight();
+	}
+	if(e.keyCode == 37) {
+		moveLeft();
+	}
+	if(e.keyCode == 38) {
+		moveUp();
+	}
+	if(e.keyCode == 40) {
+		moveDown();
+    }
+    if(e.keyCode == 27) {
+		directZoomOut();
+	}
+}
+
 window.addEventListener("wheel", wheelScroll);
 window.addEventListener("resize", resize);
 
 document.addEventListener("mousemove", setMousePosition);
 document.addEventListener("mousedown", mouseDown);
+
+document.addEventListener("keydown", keyDownHandler);
 
 for (let i=0; i < tabClass.length; i++) {
     tabClass[i].addEventListener("click", () => {directZoom(i)} );
